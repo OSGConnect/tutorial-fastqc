@@ -10,7 +10,7 @@ arguments = SRR2584863_1.trim.sub.fastq
 
 # Provide the container for our software
 universe    = container
-container_image = $(OSDF_LOCATION)/sif/fastqc.sif
+container_image = $(OSDF_LOCATION)/fastqc.sif
 
 # List files that need to be transferred to the job
 transfer_input_files = $(OSDF_LOCATION)/data/SRR2584863_1.trim.sub.fastq
