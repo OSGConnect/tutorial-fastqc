@@ -1,4 +1,5 @@
-# HTCondor Submit File: many-fastqc.submit
+# HTCondor Submit File: osdf-fastqc.submit
+# Submit a fastqc job using data/container from OSDF
 
 # reference data from OSDF instead of local copies
 OSDF_LOCATION=osdf:///ospool/uc-shared/public/osg-training/tutorial-fastqc
@@ -20,9 +21,9 @@ transfer_output_files = SRR2584863_1.trim.sub_fastqc.html
 transfer_output_remaps = "SRR2584863_1.trim.sub_fastqc.html = results/SRR2584863_1.trim.sub_fastqc.html"
 
 # Track job information
-log = logs/$(sample).fastqc.log
-output = logs/$(sample).fastqc.out
-error = logs/$(sample).fastqc.err
+log = logs/SRR2584863_1.fastqc.log
+output = logs/SRR2584863_1.fastqc.out
+error = logs/SRR2584863_1.fastqc.err
 
 # Resource Requests
 request_cpus = 1
