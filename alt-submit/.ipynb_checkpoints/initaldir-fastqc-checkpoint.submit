@@ -22,9 +22,9 @@ initialdir = results/
 # Track job information
 # We add "../" at the beginning to indicate that 
 # these folders are *not* in the results folder
-log = ../logs/$(sample).fastqc.log
-output = ../logs/$(sample).fastqc.out
-error = ../logs/$(sample).fastqc.err
+log = ../logs/SRR2584863_1.fastqc.log
+output = ../logs/SRR2584863_1.fastqc.out
+error = ../logs/SRR2584863_1.fastqc.err
 
 # Resource Requests
 request_cpus = 1
