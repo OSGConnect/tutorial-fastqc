@@ -24,7 +24,7 @@ error = logs/fastqc.err
 # Resource Requests
 request_cpus = 1
 request_memory = 1GB
-request_disk = 1GB
+request_disk = 2GB
 
 # Tell HTCondor to run our job once:
 queue 1
