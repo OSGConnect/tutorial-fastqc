@@ -1,10 +1,12 @@
 Bootstrap: docker
-From: continuumio/miniconda3:24.3.0-0
+From: ubuntu:24.04
 
-# Created by Patricia Tran
-# https://orcid.org/0000-0003-3948-3938
-# https://github.com/UW-Madison-Bacteriology-Bioinformatics/chtc-containers
+%files
+fastqc_v0.12.1.zip /opt/fastqc_v0.12.1.zip
 
 %post
-    conda install bioconda::fastqc
-    pip install multiqc
+apt update && apt install -yy default-jre unzip perl
+cd /opt && unzip fastqc_v0.12.1.zip
+
+%environment
+export PATH=/opt/FastQC:$PATH

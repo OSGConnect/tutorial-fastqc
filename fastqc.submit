@@ -1,7 +1,7 @@
 # HTCondor Submit File: fastqc.submit
 
 # Provide our executable and arguments
-executable = fastqc.sh
+executable = /opt/fastqc
 arguments = SRR2584863_1.trim.sub.fastq
 
 # Provide the container for our software
